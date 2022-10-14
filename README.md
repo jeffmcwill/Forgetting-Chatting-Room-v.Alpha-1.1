@@ -59,3 +59,8 @@ porta: 13000
 
 ADVERTENCIA: esta es una primera version de este programa, lo ire actualizando con el paso del tiempo, funciona pero tiene varios bugs que seran corregidos 
 proximamente.
+
+
+#Nueva actualizacion Alpha 1.2.1:
+añadi algunas cositas mas pequeñas, como lista de usuarios y reglas de chatting en el chat al ejecutarse.
+tambien algunos caracteres mas para que el usuario sepa mas de este proyecto. ya pronto añadire una opcion de "Mod" y "Admin"
