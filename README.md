@@ -6,8 +6,8 @@ para que se puedan conectar por medio de Sockets y Ngrok a una sala de chat.
 Pasos a seguir...
 --------------------------------------------------------------------------
 IMPORTANTE:
-descargar el archivo Ngrok.exe de su pagina oficial y ponerlo en la misma carpeta donde estan los archivos
-usuario.py y server.py para que sea mucho mas sencillo hacer toda su configuracion.
+descargar el archivo Ngrok.exe de su pagina oficial (https://ngrok.com/) y ponerlo en la misma carpeta donde estan los archivos
+usuario.py y server.py para que sea mucho mas sencillo hacer toda su configuracion en el cmd.
 para tener todo ok con ngrok, necesitamos tener una cuenta (podemos crearnosla con google), y un codigo
 especial que es unico para cada usuario. ese codigo se pega cuando demos doble click al exe y lo pongamos
 ahi, enter y ya nuestro pc estara habilitado para ser un servidor.
