@@ -1,4 +1,4 @@
-# Forgetting-Chatting-Room-v.Alpha-1.1 (Funcional/Comp con Pydroid3)
+# TCP Chatting Room (Alpha 1.2.1) (Funcional/Compatible con Pydroid3)
 
 este es un proyecto hecho enteramente en python. es un chatting room que utiliza un servidor (que puede ser nuestra pc) y un archivo usuario, ambos en python, 
 para que se puedan conectar por medio de Sockets y Ngrok a una sala de chat.
@@ -60,7 +60,9 @@ porta: 13000
 ADVERTENCIA: esta es una primera version de este programa, lo ire actualizando con el paso del tiempo, funciona pero tiene varios bugs que seran corregidos 
 proximamente.
 
-
+--------------------------------------
 #Nueva actualizacion Alpha 1.2.1:
+
 añadi algunas cositas mas pequeñas, como lista de usuarios y reglas de chatting en el chat al ejecutarse.
 tambien algunos caracteres mas para que el usuario sepa mas de este proyecto. ya pronto añadire una opcion de "Mod" y "Admin"
+#Cambio de nombre de Forgetting Chatting Room a TCP Chatting Room.
