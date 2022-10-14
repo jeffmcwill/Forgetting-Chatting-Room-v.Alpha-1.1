@@ -1,5 +1,6 @@
 import threading
 import socket
+import time
 
 #Proyecto de Conexion TCP a internet (Haciendo un chat anonimo.)
 
@@ -47,16 +48,25 @@ def receive():
 		print("--------------------------------")
 		print(f"el nombre del cliente es {nickname}!")
 		broadcast(f"{nickname} ha entrado al chat, Saludenlo!".encode('ascii'))
+		client.send("\n------------------------------------".encode('ascii'))
+		client.send("\nte has conectado a la sala de chat!".encode('ascii'))
+		client.send("\n_Reglas para el usuario: ".encode('ascii'))
+		client.send("\n1. Prohibido usar *Enie* dara error al usuario.".encode('ascii'))
+		client.send("\n2. Se puede usar cualquier version del archivo cliente para charlar aqui.".encode('ascii'))
+		client.send("\n3. Recuerda que el chat se borra automaticamente al cerrarse.".encode('ascii'))
+		client.send("\n4. se puede ejecutar tambien en dispositivos android.".encode('ascii'))
+		client.send("\n------------------------------------".encode('ascii'))
 		print("----------------------------------------------------")
-		client.send("\nte has conectado!".encode('ascii'))
-		print("----------------------------------------------------")
+		print(f"Usuarios conectados: {nicknames}")
 
 		thread = threading.Thread(target=handle,args=(client,))
 		thread.start()
 
 print("El servidor esta listo para usarse.")
+time.sleep(1)
 print("------------------------------------")
-print("Esperado usuarios o clientes...")
+time.sleep(1)
+print("Esperando a los usuarios o clientes...")
 receive()
 
 
