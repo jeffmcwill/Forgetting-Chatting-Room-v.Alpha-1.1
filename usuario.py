@@ -46,6 +46,7 @@ try:
 	print("Todo correcto :3")
 except:
 	print("No se encuentra el servidor disponible, reintentalo de nuevo.")
+	exit()
 
 #lamentablemente por motivos de seguridad o por que el socket suele variar, cada vez que
 #apaguemos el servidor o cerremos el cmd, tendremos que cambiar el client.
