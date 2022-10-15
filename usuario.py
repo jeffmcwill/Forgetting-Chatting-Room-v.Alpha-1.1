@@ -41,9 +41,11 @@ print("----------------------------------------")
 
 #client.connect(("0.tcp.sa.ngrok.io",15856)) tendria que ser asi pero le añadi los input 
 #para que no tengamos que ir modificando este archivo a cada rato.
-
-client.connect((tcp,portal))
-print("Todo correcto :3")
+try:
+	client.connect((tcp,portal))
+	print("Todo correcto :3")
+except:
+	print("No se encuentra el servidor disponible, reintentalo de nuevo.")
 
 #lamentablemente por motivos de seguridad o por que el socket suele variar, cada vez que
 #apaguemos el servidor o cerremos el cmd, tendremos que cambiar el client.
